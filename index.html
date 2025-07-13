@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulatrix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Simulatrix</h1>
+  
+  <div class="house">
+    <img src="house.png" alt="House Background" class="background">
+    
+    <div class="lamp lamp-center"></div>
+    <div class="lamp lamp-left"></div>
+    <div class="lamp lamp-right"></div>
+    
+    <div class="air-conditioner">
+      <span class="ac-status">OFF</span>
+      <span class="ac-temp">--°C</span>
+    </div>
+  </div>
+
+  <div class="controls">
+    <h2>Controle das Lâmpadas</h2>
+    <div class="lamp-controls" data-lamp="center">
+      <h3>Lâmpada Central</h3>
+      <input type="color" class="color-picker">
+      <input type="range" class="intensity" min="0" max="99" value="50">
+    </div>
+    <div class="lamp-controls" data-lamp="left">
+      <h3>Lâmpada Esquerda</h3>
+      <input type="color" class="color-picker">
+      <input type="range" class="intensity" min="0" max="99" value="50">
+    </div>
+    <div class="lamp-controls" data-lamp="right">
+      <h3>Lâmpada Direita</h3>
+      <input type="color" class="color-picker">
+      <input type="range" class="intensity" min="0" max="99" value="50">
+    </div>
+
+    <h2>Controle do Ar-Condicionado</h2>
+    <label>
+      <input type="checkbox" id="ac-power">
+      Ligar/Desligar
+    </label>
+    <input type="range" id="ac-temp" min="16" max="30" value="24">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
